@@ -15,6 +15,7 @@ A couple years passed and on October the 26th 2022 I decided to finish the proje
 The board is basically an atmega32u4 controlled 4 way buck converter. It uses an arduino pro micro, and some stuff you can easely get in an electronics store and build it yourself. 
 There's a catch tho, the COIL WHILE!. The frequency when the 4 channles are controlled (not 0% speed nor 100% speed) per channel is 2225hz ( 2.2khz ). At that frequency the coil while is very audible, so if you want to build this board you'll have to use some glue and neutral silicon sealant (not the one that has vinegar smell, thatone is acidic and will ruin the coils) to muffle it. Also maybe a 3d printed cap will also help ( fill it with sealant and put the coil in it ).
 
+## Create your own board!:
 You can also create your own serial controller. You can set which COM port to connect or just let the program pool every port and let it decide whichone to connect.
 The 3 basic commands it uses are the following ( all commands are ended with the special string `*EOM*` ):
 
@@ -45,4 +46,11 @@ The status string just needs to follow this format:
 `(fan x rpm pulses)` is the number of hall pulses the board detected. The board reads the pulses for 2 seconds and then stores it to send to the program in the next status message. The program will convert this value to RPM. The conversion the program does is `rpmPulses * 15`
 `(fan x speed)` is used to debug the boards fan speed. Nothing in this field has an effect on the program. Just keep in mind no to use the comma character.
 
+#### Example on COM communication flow with a 4 fan controller board (viewed from the boards perspective):
+Recieve: `conCOM14*EOM*`
+Send: `390218390218392180.4.COM14.*EOM*`
 
+Recieve: `spd9999500070008500*EOM*`   // speeds: Fan 1 - 9999 , Fan 2 - 5000, Fan 3 - 7000, Fan 4 - 8500
+Send: `debuginfo,212,9999,debuginfo,68,5000,debuginfo,89,7000,debuginfo,164,8500*EOM*` // RPM: Fan 1 - 3180 , Fan 2 - 1020, Fan 3 - 1335, Fan 4 - 2460
+Recieve: `get*EOM*`
+Send: `debuginfo,212,9999,debuginfo,68,5000,debuginfo,89,7000,debuginfo,164,8500*EOM*` // RPM: Fan 1 - 3180 , Fan 2 - 1020, Fan 3 - 1335, Fan 4 - 2460
