@@ -4,7 +4,7 @@ This is the releases repository of the fan controller software and board.
 # A bit of history:
 
 The project started in late 2019. I had an old X58 system with a x5675 @ 4.3ghz and a NVIDIA 1060 6gb in it. The computer worked fine, but I really didnt like the high temps that the x5675 was generating. I used to use the Almico SpeedFan ( https://www.almico.com/speedfan.php ) program, but its kind of hard to use/understand and it's outadted and no longer recieves updates of the developer. Also I needed more fan headers to control the 2 frontal fans, 2  AIO fans and 1 rear fan.
-This coincided with the time I was starting to explore the arduino world. I quickly realized I could build a board to control fans, and thus I created a very basic software to control them. 
+This coincided with the time I was starting to explore the arduino world. I quickly realized I could build a board to control fans, and thus I created a very basic software to control them. -
 After that I started playing with OpenHardwareMonitor integration, but when i realized that that project kind of died, switched to LibreHardwareMonitor.
 Both these softwares didnt support W36xx boards, so I also had to search for datasheets and add the SuperIO support for the boards that used those chips.
 During 2020 lockdown i got the chance to work on adding OHM/LHM support of W36xx, create a very basic board and a software to control it and itegrate them all together. It was really buggy but did the job just fine. After a while when everything started to go back to normal other projects and RL stuff needed more attention and so this project had to wait.
