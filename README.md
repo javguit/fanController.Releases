@@ -17,7 +17,7 @@ A couple years passed and on October the 26th 2022 I decided to finish the proje
 
 # Board:
 
-The board is basically an atmega32u4 controlled 4 way buck converter. It uses an arduino pro micro, and some stuff you can easely get in an electronics store and build it yourself. 
+The board is basically an atmega32u4 controlled 4 way buck converter. It uses an arduino pro micro, and some stuff you can easily get in an electronics store and build it yourself. 
 
 There's a catch tho, the COIL WHILE!. The frequency when the 4 channles are controlled (not 0% speed nor 100% speed) per channel is 2225hz ( 2.2khz ). At that frequency the coil while is very audible, so if you want to build this board you'll have to use some glue and neutral silicon sealant (not the one that has vinegar smell, thatone is acidic and will ruin the coils) to muffle it. Also maybe a 3d printed cap will also help ( fill it with sealant and put the coil in it ).
 
