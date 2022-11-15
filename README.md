@@ -50,9 +50,9 @@ This command is used for the program to get the connection string and lets the p
 
 - `390218390218392180.(fan quantity).(port).*EOM*`
   
-  -`390218390218392180` is an arbitrary string i chose, so nothing special there.
-  -`(fan quantity)` needs to be an integer. Describes how many fans the board can control.
-  -`(port)` is the same port that was sent with the `con(port)*EOM*` command. The port has to be a com port, so the valid strings are COM1, COM2, COM3, etc.
+  - `390218390218392180` is an arbitrary string i chose, so nothing special there.
+  - `(fan quantity)` needs to be an integer. Describes how many fans the board can control.
+  - `(port)` is the same port that was sent with the `con(port)*EOM*` command. The port has to be a com port, so the valid strings are COM1, COM2, COM3, etc.
   The status string just needs to follow this format:
     
 2. The status string the program identifies as valid has to follow this format:
@@ -68,16 +68,16 @@ This command is used for the program to get the connection string and lets the p
     If the board can't identify the message then it should return this error message.
 
 #### Example on COM communication flow with a 4 fan controller board (viewed from the boards perspective):
-Software to Board: `conCOM14*EOM*`
+1. Software to Board: `conCOM14*EOM*`
 
-Board to Software: `390218390218392180.4.COM14.*EOM*`
+2. Board to Software: `390218390218392180.4.COM14.*EOM*`
 
-Software to Board: `spd9999500070008500*EOM*`   // speeds: Fan 1 - 9999 , Fan 2 - 5000, Fan 3 - 7000, Fan 4 - 8500
+3. Software to Board: `spd9999500070008500*EOM*`   // speeds: Fan 1 - 9999 , Fan 2 - 5000, Fan 3 - 7000, Fan 4 - 8500
 
-Board to Software: `debuginfo,212,9999,debuginfo,68,5000,debuginfo,89,7000,debuginfo,164,8500*EOM*` // RPM: Fan 1 - 3180 , Fan 2 - 1020, Fan 3 - 1335, Fan 4 - 2460
+4. Board to Software: `debuginfo,212,9999,debuginfo,68,5000,debuginfo,89,7000,debuginfo,164,8500*EOM*` // RPM: Fan 1 - 3180 , Fan 2 - 1020, Fan 3 - 1335, Fan 4 - 2460
 
-Software to Board: `get*EOM*`
+5. Software to Board: `get*EOM*`
 
-Board to Software: `debuginfo,212,9999,debuginfo,68,5000,debuginfo,89,7000,debuginfo,164,8500*EOM*` // RPM: Fan 1 - 3180 , Fan 2 - 1020, Fan 3 - 1335, Fan 4 - 2460
+6. Board to Software: `debuginfo,212,9999,debuginfo,68,5000,debuginfo,89,7000,debuginfo,164,8500*EOM*` // RPM: Fan 1 - 3180 , Fan 2 - 1020, Fan 3 - 1335, Fan 4 - 2460
 
-And so on towards infinity.
+7. And so on towards infinity.
