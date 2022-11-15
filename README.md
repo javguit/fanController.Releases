@@ -35,11 +35,11 @@ get*EOM*
 
 This command is used for the program to get the connection string and lets the program identify this device as a fan controller. The connection string the program identifies as valid has to follow this format:
 
-  - `390218390218392180.(fan quantity).(port).*EOM*`
+    - `390218390218392180.(fan quantity).(port).*EOM*`
 
-    `390218390218392180` is an arbitrary string i chose, so nothing special there.
-    `(fan quantity)` needs to be an integer. Describes how many fans the board can control.
-    `(port)` is the same port that was sent with the `con(port)*EOM*` command. The port has to be a com port, so the valid strings are COM1, COM2, COM3, etc.
+      `390218390218392180` is an arbitrary string i chose, so nothing special there.
+      `(fan quantity)` needs to be an integer. Describes how many fans the board can control.
+      `(port)` is the same port that was sent with the `con(port)*EOM*` command. The port has to be a com port, so the valid strings are COM1, COM2, COM3, etc.
 
 2. `spd(fan 1 spd)(fan 2 spd) ... (fan n spd)*EOM*`
 
@@ -51,11 +51,11 @@ This command is used for the program to get the connection string and lets the p
   This command is just to get the status string from the board. This command is sent to the board when no speed change was detected. This is also used as an alive  message to the board, as if it doesnt recieve any message from the program for 10 seconds all the fans will return to 50% speed.
   The status string just needs to follow this format:
     
-  - `(fan 1 debug info),(fan 1 rpm pulses),(fan 1 speed),(fan 2 debug info),(fan 2 rpm),(fan 2 speed), .... ,(fan n debug info),(fan n rpm),(fan n speed)*EOM*`
+    - `(fan 1 debug info),(fan 1 rpm pulses),(fan 1 speed),(fan 2 debug info),(fan 2 rpm),(fan 2 speed), .... ,(fan n debug info),(fan n rpm),(fan n speed)*EOM*`
 
-    - `(fan x debug info)` is used to debug different things of the board. Nothing in this field has an effect on the program. Just keep in mind no to use the comma character.
-    - `(fan x rpm pulses)` is the number of hall pulses the board detected. The board reads the pulses for 2 seconds and then stores it to send to the program in the next status message. The program will convert this value to RPM. The conversion the program does is `rpmPulses * 15`
-    - `(fan x speed)` is used to debug the boards fan speed. Nothing in this field has an effect on the program. Just keep in mind no to use the comma character.
+      - `(fan x debug info)` is used to debug different things of the board. Nothing in this field has an effect on the program. Just keep in mind no to use the comma character.
+      - `(fan x rpm pulses)` is the number of hall pulses the board detected. The board reads the pulses for 2 seconds and then stores it to send to the program in the next status message. The program will convert this value to RPM. The conversion the program does is `rpmPulses * 15`
+      - `(fan x speed)` is used to debug the boards fan speed. Nothing in this field has an effect on the program. Just keep in mind no to use the comma character.
 
 #### Example on COM communication flow with a 4 fan controller board (viewed from the boards perspective):
 Software to Board: `conCOM14*EOM*`
