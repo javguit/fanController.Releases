@@ -58,14 +58,16 @@ This command is used for the program to get the connection string and lets the p
     - `(fan x speed)` is used to debug the boards fan speed. Nothing in this field has an effect on the program. Just keep in mind no to use the comma character.
 
 #### Example on COM communication flow with a 4 fan controller board (viewed from the boards perspective):
-Recieve: `conCOM14*EOM*`
+Software to Board: `conCOM14*EOM*`
 
-Send: `390218390218392180.4.COM14.*EOM*`
+Board to Software: `390218390218392180.4.COM14.*EOM*`
 
-Recieve: `spd9999500070008500*EOM*`   // speeds: Fan 1 - 9999 , Fan 2 - 5000, Fan 3 - 7000, Fan 4 - 8500
+Software to Board: `spd9999500070008500*EOM*`   // speeds: Fan 1 - 9999 , Fan 2 - 5000, Fan 3 - 7000, Fan 4 - 8500
 
-Send: `debuginfo,212,9999,debuginfo,68,5000,debuginfo,89,7000,debuginfo,164,8500*EOM*` // RPM: Fan 1 - 3180 , Fan 2 - 1020, Fan 3 - 1335, Fan 4 - 2460
+Board to Software: `debuginfo,212,9999,debuginfo,68,5000,debuginfo,89,7000,debuginfo,164,8500*EOM*` // RPM: Fan 1 - 3180 , Fan 2 - 1020, Fan 3 - 1335, Fan 4 - 2460
 
-Recieve: `get*EOM*`
+Software to Board: `get*EOM*`
 
-Send: `debuginfo,212,9999,debuginfo,68,5000,debuginfo,89,7000,debuginfo,164,8500*EOM*` // RPM: Fan 1 - 3180 , Fan 2 - 1020, Fan 3 - 1335, Fan 4 - 2460
+Board to Software: `debuginfo,212,9999,debuginfo,68,5000,debuginfo,89,7000,debuginfo,164,8500*EOM*` // RPM: Fan 1 - 3180 , Fan 2 - 1020, Fan 3 - 1335, Fan 4 - 2460
+
+And so on towards infinity.
