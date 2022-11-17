@@ -21,6 +21,14 @@ To better understand how to use the software please visit this site's Wiki.
 
 <b>IF THERE'S A TEMP SENSOR, A FAN CONTROL OR AN RPM SENSOR THAT DOESN'T WORK PLEASE REFER THAT TO LHM'S GITHUB</b>.
 
+## Installation:
+
+It does not need an installation. Just unzip the folder, place it where you want and run the executable.
+
+## Uninstallation:
+
+Just close the program and delete the folder. Don't forget to remove the autorun option from the settings menu, so the task in the task scheduler gets erased too.
+
 ## Libraries used:
 
 The libraries used are:
