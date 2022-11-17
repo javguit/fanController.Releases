@@ -34,7 +34,7 @@ The libraries used are:
 
 The board is basically an atmega32u4 controlled 4 way buck converter. It uses an arduino pro micro, and some stuff you can easily get in an electronics store and build it yourself. This board is prepared to control 4 3-pin fans (also 4-pin fans since this is controlling the voltage). Adapting this to a 4-pin only board ( or combine 2 and 2 for example ) should be pretty straight forward since 4-pin fans are easier to control and hence easier to build.
 
-Now, the COIL WHILE!. The ADC ( voltage feedback ) read speed when the 4 channles are controlled (not 0% speed nor 100% speed as those speeds dont need a feedback read) per channel is about 2.2khz. The max PWM speed i could achieve with this controller is about 31khz. All this combined makes the coil while audible, so if you want to build this board you'll have to use some glue and neutral silicon sealant (not the one that has vinegar smell, thatone is acidic and will ruin the coils ) to muffle it ( or maybe build your own board with a better ADC and PWM ). Also a 3d printed cap may help ( fill it with sealant and put the coil in it ).
+Now, the COIL WHILE!. The ADC ( voltage feedback ) read speed when the 4 channles are controlled (not 0% speed nor 100% speed as those speeds dont need a feedback read) per channel is about 2.2khz. The max PWM speed I could achieve with this controller is about 31khz. All this combined makes the coil while audible, so if you want to build this board you'll have to use some glue and neutral silicon sealant (not the one that has vinegar smell, thatone is acidic and will ruin the coils ) to muffle it ( or maybe build your own board with a better ADC and PWM ). Also a 3d printed cap may help ( fill it with sealant and put the coil in it ).
 
 ## Create your own board!:
 You can also create your own serial controller. You can set which COM port to connect or just let the program pool every port and let it decide which one to connect.
@@ -65,7 +65,7 @@ This command is used for the program to get the connection string and lets the p
 
 - `390218390218392180.(fan quantity).(port).*EOM*`
   
-  - `390218390218392180` is an arbitrary string i chose, so nothing special there.
+  - `390218390218392180` is an arbitrary string I chose so the program recognizes this COM device as a valid controller.
   - `(fan quantity)` needs to be an integer. Describes how many fans the board can control.
   - `(port)` is the same port that was sent with the `con(port)*EOM*` command. The port has to be a com port, so the valid strings are COM1, COM2, COM3, etc.
   The status string just needs to follow this format:
