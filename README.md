@@ -15,9 +15,11 @@ A couple years passed and on October the 26th 2022 I decided to finish the proje
 
 # Software:
 
-The software relays on LHM's library to get the computer's temperatures and RPMs and set the fans speeds. <b>IF THERE'S A TEMP SENSOR, A FAN CONTROL OR AN RPM SENSOR THAT DOESN'T WORK PLEASE REFER THAT TO LHM'S GITHUB</b>. In addition to it, you can set custom curves, attach different temp sensors to a fan, set automatic/manual/computer control, set min/max speeds, off temps, start speeds, min speed for RPM read (many fans return messed up rpm reads when the speed is too low), test your configuration by manually changing the temps, save and reutilize your curves, export curves to share them.
+The software relays on LHM's library to get the computer's temperatures and RPMs and set the fans speeds. In addition to it, you can set custom curves, attach different temp sensors to a fan, set automatic/manual/computer control, set min/max speeds, off temps, start speeds, min speed for RPM read (many fans return messed up rpm reads when the speed is too low), test your configuration by manually changing the temps, save and reutilize your curves, export curves to share them.
 
 To better understand how to use the software please visit this site's Wiki.
+
+<b>IF THERE'S A TEMP SENSOR, A FAN CONTROL OR AN RPM SENSOR THAT DOESN'T WORK PLEASE REFER THAT TO LHM'S GITHUB</b>.
 
 # Board:
 
