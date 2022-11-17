@@ -21,6 +21,15 @@ To better understand how to use the software please visit this site's Wiki.
 
 <b>IF THERE'S A TEMP SENSOR, A FAN CONTROL OR AN RPM SENSOR THAT DOESN'T WORK PLEASE REFER THAT TO LHM'S GITHUB</b>.
 
+## Libraries used:
+
+The libraries used are:
+
+1. Libre Hardware Monitor: https://github.com/LibreHardwareMonitor/LibreHardwareMonitor
+2. Newtonsoft JSON: https://github.com/JamesNK/Newtonsoft.Json
+3. TaskScheduler: https://github.com/dahall/taskscheduler
+4. HidSharp ( dependency of LHM ): https://www.nuget.org/packages/HidSharp
+
 # Board:
 
 The board is basically an atmega32u4 controlled 4 way buck converter. It uses an arduino pro micro, and some stuff you can easily get in an electronics store and build it yourself. This board is prepared to control 4 3-pin fans (also 4-pin fans since this is controlling the voltage). Adapting this to a 4-pin only board ( or combine 2 and 2 for example ) should be pretty straight forward since 4-pin fans are easier to control and hence easier to build.
