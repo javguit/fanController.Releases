@@ -1,7 +1,7 @@
 # fanController.Releases
 This is the releases repository of the fan controller software and board.
 
-[![Github All Releases](https://img.shields.io/github/downloads/javguit/fanController.Releases/total.svg)](https://github.com/javguit/fanController.Releases/releases/latest) [![Donations Badge](https://github.com/k4m4/donations/blob/master/images/badge.svg)](https://github.com/javguit/fanController.Releases/blob/main/README.md#donate)
+[![Github All Releases](https://img.shields.io/github/downloads/javguit/fanController.Releases/total.svg)](https://github.com/javguit/fanController.Releases/releases/latest)  [![Donations Badge](https://github.com/k4m4/donations/blob/master/images/badge.svg)](https://github.com/javguit/fanController.Releases/blob/main/README.md#donate)
 
 # A bit of history:
 
