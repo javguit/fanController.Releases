@@ -1,6 +1,8 @@
 # fanController.Releases
 This is the releases repository of the fan controller software and board.
 
+[![Github All Releases](https://img.shields.io/github/downloads/javguit/fanController.Releases/total.svg)]()
+
 # A bit of history:
 
 The project started in late 2019. I had an old X58 system with a x5675 @ 4.3ghz and a NVIDIA 1060 6gb in it. The computer worked fine, but I really didnt like the high temps that the x5675 was generating. I used to use the Almico SpeedFan ( https://www.almico.com/speedfan.php ) program, but its kind of hard to use/understand and it's outadted and no longer recieves updates of the developer. Also I needed more fan headers to control the 2 frontal fans, 2  AIO fans and 1 rear fan.
