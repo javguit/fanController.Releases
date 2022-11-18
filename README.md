@@ -45,6 +45,7 @@ The libraries used are:
 <b>The board is optional! You can use the software without the board!</b>
 
 Link (schematic, pcb and source code): https://oshwlab.com/javguit/fan-controller-2-5-3pin-4#P2
+Link (stl files for 3dprinting the pci bracket): https://www.thingiverse.com/thing:5639938
 
 The board is basically an Arduino Pro Micro ( atmega32u4 ) controlled 4 way buck converter. It uses an arduino pro micro, and some stuff you can easily get in an electronics store and build it yourself. This board is prepared to control 4 3-pin fans (also 4-pin fans since this is controlling the voltage). Adapting this to a 4-pin only board ( or combine 2 and 2 for example ) should be pretty straight forward since 4-pin fans are easier to control and hence easier to build.
 
