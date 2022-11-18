@@ -112,3 +112,11 @@ This command is used for the program to get the connection string and lets the p
 7. And so on towards infinity.
 
 # Donate!:
+
+If you want to support this project, you can do so by sending cryptocurrency to the following wallets.
+
+BTC: 1Nx2tg3D2E643Xadh1uBm9WcUUqwuWV55L
+ETH: 0xdd9d08dbaa9324aabac570c5d0e67e79f5b92fbe
+USDT (erc20): 0xdd9d08dbaa9324aabac570c5d0e67e79f5b92fbe
+
+THANK YOU VERY MUCH!
