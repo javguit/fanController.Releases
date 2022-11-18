@@ -3,7 +3,7 @@ This is the releases repository of the fan controller software and board.
 
 [![Github All Releases](https://img.shields.io/github/downloads/javguit/fanController.Releases/total.svg)](https://github.com/javguit/fanController.Releases/releases/latest) 
 
-[![Donations Badge](https://yourdonation.rocks/images/badge.svg)]({www.wololo.com})
+[![Donations Badge](https://github.com/k4m4/donations/blob/master/images/badge.svg)]({www.wololo.com})
 
 # A bit of history:
 
@@ -112,3 +112,5 @@ This command is used for the program to get the connection string and lets the p
 6. Board to Software: `debuginfo,212,9999,debuginfo,68,5000,debuginfo,89,7000,debuginfo,164,8500*EOM*` // RPM: Fan 1 - 3180 , Fan 2 - 1020, Fan 3 - 1335, Fan 4 - 2460
 
 7. And so on towards infinity.
+
+# Donate!:
