@@ -53,13 +53,15 @@ STL files for 3dprinting the pci bracket: https://www.thingiverse.com/thing:5639
 
 The board is basically an Arduino Pro Micro ( atmega32u4 ) controlled 4 way buck converter. It uses an arduino pro micro, and some stuff you can easily get in an electronics store and build it yourself. This board is prepared to control 4 3-pin fans (also 4-pin fans since this is controlling the voltage). Adapting this to a 4-pin only board ( or combine 2 and 2 for example ) should be pretty straight forward since 4-pin fans are easier to control and hence easier to build.
 
-Now, the COIL WHILE!. The ADC ( voltage feedback ) read speed when the 4 channles are controlled (not 0% speed nor 100% speed as those speeds dont need a feedback read) per channel is about 2.2khz. The max PWM speed I could achieve with this controller is about 31khz. All this combined makes the coil while audible, so if you want to build this board you'll have to use some glue and neutral silicon sealant (not the one that has vinegar smell, thatone is acidic and will ruin the coils ) to muffle it ( or maybe build your own board with a better ADC and PWM ). Also a 3d printed cap may help ( fill it with sealant and put the coil in it ).
+Now, the coil noise. The ADC ( voltage feedback ) read speed when the 4 channles are controlled (not 0% speed nor 100% speed as those speeds dont need a feedback read) per channel is about 2.2khz. The max PWM speed I could achieve with this controller is about 31khz. All this combined makes the coil while audible, so if you want to build this board you'll have to use some glue and neutral silicon sealant (not the one that has vinegar smell, thatone is acidic and will ruin the coils ) to muffle it ( or maybe build your own board with a better ADC and PWM ). Also a 3d printed cap may help ( fill it with sealant and put the coil in it ).
 
 ![Screenshot](/wiki.images/board.uncap.jpg) <br>
 ![Screenshot](/wiki.images/board.cap.jpg)
 
 ## Create your own board!:
-You can also create your own serial controller. You can set which COM port to connect or just let the program pool every port and let it decide which one to connect.
+
+First of all,
+You can also create your own serial controller. You can set which COM port to connect or just let the program pool every port and let it decide which one to connect.  The serial speed has to be 115200 bits/s. <br>
 The 3 basic commands it uses are the following ( all commands are ended with the special string `*EOM*` ):
 
 #### Commands the board will receive from the software:
