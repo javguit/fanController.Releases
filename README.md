@@ -55,6 +55,9 @@ The board is basically an Arduino Pro Micro ( atmega32u4 ) controlled 4 way buck
 
 Now, the COIL WHILE!. The ADC ( voltage feedback ) read speed when the 4 channles are controlled (not 0% speed nor 100% speed as those speeds dont need a feedback read) per channel is about 2.2khz. The max PWM speed I could achieve with this controller is about 31khz. All this combined makes the coil while audible, so if you want to build this board you'll have to use some glue and neutral silicon sealant (not the one that has vinegar smell, thatone is acidic and will ruin the coils ) to muffle it ( or maybe build your own board with a better ADC and PWM ). Also a 3d printed cap may help ( fill it with sealant and put the coil in it ).
 
+![Screenshot](/wiki.images/board.uncap.jpg) <br>
+![Screenshot](/wiki.images/board.cap.jpg)
+
 ## Create your own board!:
 You can also create your own serial controller. You can set which COM port to connect or just let the program pool every port and let it decide which one to connect.
 The 3 basic commands it uses are the following ( all commands are ended with the special string `*EOM*` ):
