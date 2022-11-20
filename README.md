@@ -24,8 +24,8 @@ To better understand how to use the software please visit this site's Wiki.
 
 <b>IF THERE'S A TEMP SENSOR, A FAN CONTROL OR AN RPM SENSOR THAT DOESN'T WORK PLEASE REFER THAT TO LHM'S GITHUB</b>.
 
-![Screenshot](/wiki.images/main-COMdevice.jpg) <br>
-![Screenshot](/wiki.images/auto-config3.jpg)
+![Screenshot](/images/main-COMdevice.jpg) <br>
+![Screenshot](/images/auto-config3.jpg)
 
 ## Installation:
 
@@ -57,8 +57,8 @@ Why use an Arduino Pro Micro and not an uber speciallized controller? Because th
 
 Now, the coil noise. The ADC ( voltage feedback ) read speed when the 4 channles are controlled (not 0% speed nor 100% speed as those speeds dont need a feedback read) per channel is about 2.2khz. The max PWM speed I could achieve with this controller is about 31khz. All this combined makes the coil while audible, so if you want to build this board you'll have to use some glue and neutral silicon sealant (not the one that has vinegar smell, thatone is acidic and will ruin the coils ) to muffle it ( or maybe build your own board with a better ADC and PWM ). Also a 3d printed cap may help ( fill it with sealant and put the coil in it ).
 
-![Screenshot](/wiki.images/board.uncap.jpg) <br>
-![Screenshot](/wiki.images/board.cap.jpg)
+![Screenshot](/images/board.uncap.jpg) <br>
+![Screenshot](/images/board.cap.jpg)
 
 ## Create your own board!:
 
