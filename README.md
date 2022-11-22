@@ -4,23 +4,11 @@ Here you'll find the link for the board schematic, pcb and sourcecode, and the S
 
 [![Github All Releases](https://img.shields.io/github/downloads/javguit/fanController.Releases/total.svg)](https://github.com/javguit/fanController.Releases/releases/latest)  [![Donations Badge](https://github.com/k4m4/donations/blob/master/images/badge.svg)](https://github.com/javguit/fanController.Releases/blob/main/README.md#donate)
 
-# A bit of history:
-
-The project started in late 2019. I had an old X58 system with a x5675 @ 4.3ghz and a NVIDIA 1060 6gb in it. The computer worked fine, but I really didnt like the high temps that the x5675 was generating. I used to use the Almico SpeedFan ( https://www.almico.com/speedfan.php ) program, but its kind of hard to use/understand and it's outadted and no longer recieves updates of the developer. Also I needed more fan headers to control the 2 frontal fans, 2  AIO fans and 1 rear fan.
-This coincided with the time I was starting to explore the arduino world. 
-
-After that I started playing with OpenHardwareMonitor integration, but when I realized that that project kind of died, switched to LibreHardwareMonitor.
-Both these softwares didnt support W36xx boards, so I also had to search for datasheets and add the SuperIO support for the boards that used those chips.
-
-During 2020 lockdown i got the chance to work on adding OHM/LHM support of W36xx, create a very basic board and a software to control it and itegrate them all together. It was really buggy but did the job just fine. After a while when everything started to go back to normal ( COVIDwhise ) other projects and RL stuff needed more attention and so this project had to wait.
-
-A couple years passed and on October the 26th 2022 I decided to finish the project once and for all and release it to the public.
-
 # Software:
 
 The software relays on LHM's library to get the computer's temperatures and RPMs and set the fans speeds. In addition to it, you can set custom curves, attach different temp sensors to a fan, set automatic/manual/computer control, set min/max speeds, off temps, start speeds, min speed for RPM read (many fans return messed up rpm reads when the speed is too low), test your configuration by manually changing the temps, save and reutilize your curves, export curves to share them.
 
-To better understand how to use the software please visit this site's Wiki.
+To better understand how to use the software please visit this site's Wiki (still in construction).
 
 <b>IF THERE'S A TEMP SENSOR, A FAN CONTROL OR AN RPM SENSOR THAT DOESN'T WORK PLEASE REFER THAT TO LHM'S GITHUB</b>.
 
@@ -132,3 +120,15 @@ ETH: 0xdd9d08dbaa9324aabac570c5d0e67e79f5b92fbe <br>
 USDT (erc20): 0xdd9d08dbaa9324aabac570c5d0e67e79f5b92fbe 
 
 THANK YOU VERY MUCH!
+
+# A bit of history:
+
+The project started in late 2019. I had an old X58 system with a x5675 @ 4.3ghz and a NVIDIA 1060 6gb in it. The computer worked fine, but I really didnt like the high temps that the x5675 was generating. I used to use the Almico SpeedFan ( https://www.almico.com/speedfan.php ) program, but its kind of hard to use/understand and it's outadted and no longer recieves updates of the developer. Also I needed more fan headers to control the 2 frontal fans, 2  AIO fans and 1 rear fan.
+This coincided with the time I was starting to explore the arduino world. 
+
+After that I started playing with OpenHardwareMonitor integration, but when I realized that that project kind of died, switched to LibreHardwareMonitor.
+Both these softwares didnt support W36xx boards, so I also had to search for datasheets and add the SuperIO support for the boards that used those chips.
+
+During 2020 lockdown i got the chance to work on adding OHM/LHM support of W36xx, create a very basic board and a software to control it and itegrate them all together. It was really buggy but did the job just fine. After a while when everything started to go back to normal ( COVIDwhise ) other projects and RL stuff needed more attention and so this project had to wait.
+
+A couple years passed and on October the 26th 2022 I decided to finish the project once and for all and release it to the public.
