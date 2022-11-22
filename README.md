@@ -44,7 +44,7 @@ The board is basically an Arduino Pro Micro ( atmega32u4 ) controlled 4 channel 
 
 Why use an Arduino Pro Micro and not an uber speciallized controller? Because this is a DIY project, and a Pro Micro is easier to source and program.
 
-Now, the coil noise. The ADC ( voltage feedback ) read speed when the 4 channles are controlled (not 0% speed nor 100% speed as those speeds dont need a feedback read) per channel is about 2.2khz. The max PWM speed I could achieve with this controller is about 31khz. All this combined makes the coil while audible, so if you want to build this board you'll have to use some glue and neutral silicon sealant (not the one that has vinegar smell, thatone is acidic and will ruin the coils ) to muffle it ( or maybe build your own board with a better ADC and PWM ). Also a 3d printed cap may help ( fill it with sealant and put the coil in it ).
+Now, the coil noise. The ADC ( voltage feedback ) read speed when the 4 channles are controlled (not 0% speed nor 100% speed as those speeds dont need a feedback read) per channel is about 12.5khz. The max PWM speed I could achieve with this controller is about 31khz. All this combined makes the coil while audible, so if you want to build this board you'll have to use some glue and neutral silicon sealant (not the one that has vinegar smell, that one is acidic and will ruin the coils ) to muffle it ( or maybe build your own board with a better ADC and PWM ). Also a 3d printed cap may help ( fill it with sealant and put it over the coils ).
 
 ![Screenshot](/images/board.uncap.jpg) <br>
 ![Screenshot](/images/board.cap.jpg)
