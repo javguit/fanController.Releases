@@ -3,7 +3,7 @@ This is the releases repository of the fan controller software.
 Here you'll find the link for the board schematic, pcb and sourcecode, and the STL files of the pcibracket+inductors cap.<br>
 <b>The board is optional! You can use the software without the board!</b>
 
-[![Github All Releases](https://img.shields.io/github/downloads/javguit/fanController.Releases/total.svg)](https://github.com/javguit/fanController.Releases/releases/latest)  [![Donations Badge](https://github.com/k4m4/donations/blob/master/images/badge.svg)](https://github.com/javguit/fanController.Releases/blob/main/README.md#donate)
+[![Github All Releases](https://img.shields.io/badge/Download-fanController-green)](https://github.com/javguit/fanController.Releases/releases/latest)  [![Donations Badge](https://img.shields.io/badge/Donate-%3AD-blue)](https://github.com/javguit/fanController.Releases/blob/main/README.md#donate)
 
 # Software:
 
