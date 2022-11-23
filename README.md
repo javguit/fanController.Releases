@@ -130,6 +130,6 @@ This coincided with the time I was starting to explore the arduino world.
 After that I started playing with OpenHardwareMonitor integration, but when I realized that that project kind of died, switched to LibreHardwareMonitor.
 Both these softwares didnt support W36xx boards, so I also had to search for datasheets and add the SuperIO support for the boards that used those chips.
 
-During 2020 lockdown i got the chance to work on adding OHM/LHM support of W36xx, create a very basic board and a software to control it and itegrate them all together. It was really buggy but did the job just fine. After a while when everything started to go back to normal ( COVIDwhise ) other projects and RL stuff needed more attention and so this project had to wait.
+During 2020 lockdown i got the chance to work on adding OHM/LHM support of W36xx, create a very basic board and a software to control it and itegrate them all together. It was really buggy but did the job just fine. After a while when everything started to go back to normal ( COVIDwise ) other projects and RL stuff needed more attention and so this project had to wait.
 
 A couple years passed and on October the 26th 2022 I decided to finish the project once and for all and release it to the public.
