@@ -16,6 +16,10 @@ To better understand how to use the software please visit this site's Wiki (stil
 ![Screenshot](/images/main-COMdevice.jpg) <br>
 ![Screenshot](/images/auto-config3.jpg)
 
+## Prerequisites:
+
+- .NET Framework 4.7.2 
+
 ## Installation:
 
 It does not need an installation. Just unzip the folder, place it where you want and run the executable.
