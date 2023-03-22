@@ -3,7 +3,7 @@ This is the releases repository of the fan controller software.
 Here you'll find the link for the board schematic, pcb and sourcecode, and the STL files of the pcibracket+inductors cap.<br>
 <b>The board is optional! You can use the software without the board!</b>
 
-[![Github All Releases](https://img.shields.io/badge/Download-fanController-green)](https://github.com/javguit/fanController.Releases/releases/latest)  [![Donations Badge](https://img.shields.io/badge/Donate-%3AD-blue)](https://github.com/javguit/fanController.Releases/blob/main/README.md#donate)
+[![Github All Releases](https://img.shields.io/badge/Download-fanController-green)](https://github.com/javguit/fanController.Releases/releases/latest)  [![Donations Badge](https://img.shields.io/badge/Donate-%3AD-blue)](https://github.com/javguit/fanController.Releases/blob/main/README.md#donate) [![License Badge](https://img.shields.io/badge/License-CC0-orange)](https://github.com/javguit/fanController.Releases/blob/main/LICENSE)
 
 # Software:
 
@@ -15,6 +15,10 @@ To better understand how to use the software please visit this site's Wiki (stil
 
 ![Screenshot](/images/main-COMdevice.jpg) <br>
 ![Screenshot](/images/auto-config3.jpg)
+
+## Prerequisites:
+
+- .NET Framework 4.7.2 
 
 ## Installation:
 
