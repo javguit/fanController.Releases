@@ -119,9 +119,10 @@ This command is used for the program to get the connection string and lets the p
 
 If you want to support this project, you can do so by sending cryptocurrency to the following wallets.
 
-BTC: 1Nx2tg3D2E643Xadh1uBm9WcUUqwuWV55L <br>
-ETH: 0xdd9d08dbaa9324aabac570c5d0e67e79f5b92fbe <br>
-USDT (erc20): 0xdd9d08dbaa9324aabac570c5d0e67e79f5b92fbe 
+BTC: 1BMcMP6yEHwJkpKRGuLEfFh2o7JpLFpaz5 <br>
+ETH (erc20): 0xdd9d08dbaa9324aabac570c5d0e67e79f5b92fbe <br>
+USDT (erc20): 0xdd9d08dbaa9324aabac570c5d0e67e79f5b92fbe <br>
+SOL (SOL): ACJVh741zxjMrLtw2jQeWGhnraeCsSsnhAV2mM48Daqa
 
 THANK YOU VERY MUCH!
 
