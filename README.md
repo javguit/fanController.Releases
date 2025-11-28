@@ -35,7 +35,7 @@ The libraries used are:
 1. Libre Hardware Monitor: https://github.com/LibreHardwareMonitor/LibreHardwareMonitor
 2. Newtonsoft JSON: https://github.com/JamesNK/Newtonsoft.Json
 3. TaskScheduler: https://github.com/dahall/taskscheduler
-4. HidSharp ( dependency of LHM ): https://www.nuget.org/packages/HidSharp
+4. WinForms.DataVisualization: https://www.nuget.org/packages/WinForms.DataVisualization
 
 # Board:
 
