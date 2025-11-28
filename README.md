@@ -18,7 +18,7 @@ To better understand how to use the software please visit this site's Wiki (stil
 
 ## Prerequisites:
 
-- .NET Framework 4.7.2 
+- .NET 10
 
 ## Installation:
 
