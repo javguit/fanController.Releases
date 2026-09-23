@@ -67,15 +67,15 @@ get*EOM*
 
 1. `con(port)*EOM*` 
 
-This command is used for the program to get the connection string and lets the program identify this device as a fan controller. This command needs to return a connection string as described below.
+  This command is used for the program to get the connection string and lets the program identify this device as a fan controller. This command needs to return a connection string as described in the next section.
 
 2. `spd(fan 1 spd)(fan 2 spd) ... (fan n spd)*EOM*`
 
-  This command sets the fans speeds. The speed value ranges from 0 to 9999, being 0 as 0% speed and 9999 as 100% speed. The program will send this string whenever any fan speed change is detected. So every time a change is detected by the program, it will send all the values to the board despite them having changed or not. This command needs to return an status string as described below.
+  This command sets the fans speeds. The speed value ranges from 0 to 9999, being 0 as 0% speed and 9999 as 100% speed. The program will send this string whenever any fan speed change is detected. So every time a change is detected by the program, it will send all the values to the board despite them having changed or not. This command needs to return an status string as described in the next section.
 
 3. `get*EOM*`
 
-  This command is just to get the status string from the board. This command is sent to the board when no speed change was detected. This is also used as an alive  message to the board, as if it doesnt recieve any message from the program for 10 seconds all the fans will return to 50% speed. This command needs to return an status string as described below.
+  This command is just to get the status string from the board. This command is sent to the board when no speed change was detected. This is also used as an alive message to the board, as if it doesn't receive any message from the program for 10 seconds all the fans will return to 50% speed. This command needs to return an status string as described in the next section.
   
 #### Commands the board will send to the software:
 
