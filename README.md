@@ -86,7 +86,6 @@ get*EOM*
   - `390218390218392180` is an arbitrary string I chose so the program recognizes this COM device as a valid controller.
   - `(fan quantity)` needs to be an integer. Describes how many fans the board can control.
   - `(port)` is the same port that was sent with the `con(port)*EOM*` command. The port has to be a com port, so the valid strings are COM1, COM2, COM3, etc.
-  The status string just needs to follow this format:
     
 2. The status string the program identifies as valid has to follow this format:
 
