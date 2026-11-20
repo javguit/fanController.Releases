@@ -13,8 +13,8 @@ To better understand how to use the software please visit this site's Wiki (stil
 
 <b>IF THERE'S A TEMP SENSOR, A FAN CONTROL OR AN RPM SENSOR THAT DOESN'T WORK PLEASE REFER THAT TO LHM'S GITHUB</b>.
 
-![Screenshot](/images/main-COMdevice.jpg) <br>
-![Screenshot](/images/auto-config3.jpg)
+![Screenshot](/images/main.jpg) <br>
+![Screenshot](/images/auto.jpg)
 
 ## Prerequisites:
 
